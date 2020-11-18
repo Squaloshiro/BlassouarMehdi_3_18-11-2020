@@ -1,0 +1,51 @@
+.grillerestaurants{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 20em);
+    grid-gap: 30px;
+}
+.image1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.image2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.image3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.image4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+.Imagesrestaurants {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*.activitetitre {
+    margin: 1.2em 1.5em;
+    cursor: pointer;
+}*/
+
+.SectionRestaurants{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    box-shadow: 0 0 1em #0000002e;
+    overflow: hidden;
+    transition-duration: 0.1s;
+}
+.Imageslink {
+    position: relative;
+    flex: 1;
+}
