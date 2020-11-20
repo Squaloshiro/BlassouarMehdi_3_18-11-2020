@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +8,119 @@
     <link rel="stylesheet" href="index.css">
     <title>Accueil</title>
 </head>
+
 <body>
     <header>
-            <a href="#"><img src="images/ohmyfood@2x.svg" alt="images du logo de oh my food"></a>
+        <a href="#"><img src="images/ohmyfood@2x.svg" alt="images du logo de oh my food"></a>
     </header>
-    <nav>
-        <i class="fas fa-search petiticonrecherche"></i>
+    <div class="localisation">
+        <i class="fas fa-map-marker-alt iconmap"></i>
         <input class="barrederecherche" type="search" name="search" placeholder="Parie, Belleville">
-    </nav>
-    <section>
-            <h1>Réservez le menue qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, selectionner par nos soins.</p>
-            <button>
-                    <span>Explorer nos restaurants</span>
-            </button>
+    </div>
+    <section class="introduction">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p class="textdintro">Découvrez des restaurants d'exception, selectionner par nos soins.</p>
+        <button>
+            <span>Explorer nos restaurants</span>
+        </button>
     </section>
-    <section>
-            <h2>Fonctionnement</h2>
-            <section>
-                1
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Choisissez un restaurant</h3>
+    <section class="sectionfonctionnement">
+        <h2 class="titrefonctionnement">Fonctionnement</h2>
+        <div class="fonctionnement">
+            <section class="boutonfonctionnement">
+                <div class="number position">1</div>
+                <i class="fas fa-mobile-alt position taillephoneicon"></i>
+                <h4 class="position titrefonction">Choisissez un restaurant</h4>
             </section>
-            <section>
-                2
-                <i class="fas fa-list"></i>
-                <h3>composez votre menue</h3>
+            <section class="boutonfonctionnement">
+                <div class="number position">2</div>
+                <i class="fas fa-list position taillelisticon"></i>
+                <h4 class="position titrefonction">Composez votre menue</h3>
             </section>
-            <section>
-                3
-                <i class="fas fa-store"></i>
-                <h3>Dégustez au restaurant</h3>
+            <section class="boutonfonctionnement">
+                <div class="number position">3</div>
+                <i class="fas fa-store position taillestoricon"></i>
+                <h4 class="position titrefonction">Dégustez au restaurant</h4>
             </section>
+        </div>
     </section>
-    <section>
-            <h2>Restaurants</h2>
-            <div class="grillerestaurants">
-                <section class="SectionRestaurants image1">
-                    <a class="Imageslink" href="lapalettedugoût.html">
-                        <img class="Imagesrestaurants" src="images/La palette du gout.jpg" alt="Image du restaurant la palette du goût">
+    <section class="sectionresto">
+        <h2>Restaurants</h2>
+        <div class="grillerestaurants">
+            <section class="SectionRestaurants image1">
+                <div class="nouveauresto">
+                    <a class="titrenouveau" href="lapalettedugoût.html">
+                        Nouveau
                     </a>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </section>
-                <section class="SectionRestaurants image2">
-                    <a class="Imageslink" href="lanoteenchantée.html">
-                        <img class="Imagesrestaurants" src="images/La note enchantée.jpg" alt="Image du restaurant la note enchantée">
+                </div>
+                <div class="coeurvideicon">
+                    <a class="textcoeur" href="lapalettedugoût.html"><i class="far fa-heart"></i></a>
+                </div>
+                <a class="Imageslink" href="lapalettedugoût.html">
+                    <img class="Imagesrestaurants" src="images/La palette du gout.jpg"
+                        alt="Image du restaurant la palette du goût">
+                </a>
+                <a href="lapalettedugoût.html">
+                    <h3 class="titreresto">La palette du goût</h3>
+                    <p class="textresto">Ménilmontant</p>
+                </a>
+            </section>
+            <section class="SectionRestaurants image2">
+                <div class="nouveauresto">
+                    <a class="titrenouveau" href="lanoteenchantée.html">
+                        Nouveau
                     </a>
-                        <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                </section>
-                <section class="SectionRestaurants image3">
-                    <a class="Imageslink" href="alafrançaise.html">
-                        <img class="Imagesrestaurants" src="images/A  la française.jpg " alt="Image du restaurant A la française">
-                    </a>
-                        <h3>A la française</h3>
-                    <p>Cité Rouge</p>
-                </section>
-                <section class="SectionRestaurants image4">
-                    <a class="Imageslink" href="ledélicedessens.html">
-                        <img class="Imagesrestaurants" src="images/Le délice des sens.jpg" alt="Image du restaurant Le délice des sens">
-                    </a>
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                </section>
-            </div>
+                </div>
+                <div class="coeurvideicon" class="coeurvideicon">
+                    <a class="textcoeur" href="lanoteenchantée.html"><i class="far fa-heart"></i></a>
+                </div>
+                <a class="Imageslink" href="lanoteenchantée.html">
+                    <img class="Imagesrestaurants" src="images/La note enchantée.jpg"
+                        alt="Image du restaurant la note enchantée">
+                </a>
+                <a href="lanoteenchantée.html">
+                    <h3 class="titreresto">La note enchantée</h3>
+                    <p class="textresto">Charonne</p>
+                </a>
+            </section>
+
+            <section class="SectionRestaurants image3">
+                <div class="coeurvideicon">
+                    <a class="textcoeur" href="alafrançaise.html"><i class="far fa-heart"></i></a>
+                </div>
+                <a class="Imageslink" href="alafrançaise.html">
+                    <img class="Imagesrestaurants" src="images/A  la française.jpg "
+                        alt="Image du restaurant A la française">
+                </a>
+                <a href="alafrançaise.html">
+                    <h3 class="titreresto">A la française</h3>
+                    <p class="textresto">Cité Rouge</p>
+                </a>
+            </section>
+            
+            <section class="SectionRestaurants image4">
+                <div class="coeurvideicon">
+                    <a class="textcoeur" href="ledélicedessens.html"><i class="far fa-heart"></i></a>
+                </div>
+                <a class="Imageslink" href="ledélicedessens.html">
+                    <img class="Imagesrestaurants" src="images/Le délice des sens.jpg"
+                        alt="Image du restaurant Le délice des sens">
+                </a>
+                <a href="ledélicedessens.html">
+                    <h3 class="titreresto">Le délice des sens</h3>
+                    <p class="textresto">Folie-Méricourt</p>
+                </a>
+            </section>
+        </div>
     </section>
     <footer>
-        <a href="#"><img src="images/ohmyfood@2x.svg" alt="images du logo de oh my food"></a>
-        <ul>
-            <li><i class="fas fa-utensils"></i>Proposer un réstaurant</li>
-            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-            
+        <a href="#"><img class="logofooter" src="images/ohmyfood@2x.svg" alt="images du logo de oh my food"></a>
+        <span class="textfooter"><i class="fas fa-utensils iconuten"></i>Proposer un réstaurant</span>
+        <span class="textfooter"><i class="fas fa-hands-helping iconhelp"></i>Devenir partenaire</span>
+        <span class="textfooter">Mentions légales</span>
+        <span class="textfooter"><a class="linkfooter" href="#">Contact</a></span>
     </footer>
-    
+
 </body>
+
 </html>

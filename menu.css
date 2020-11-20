@@ -1,0 +1,174 @@
+@font-face{
+    font-family: 'Roboto-Regular.ttf';
+    src: url('Roboto-Regular.ttf');
+
+}
+@font-face{
+    font-family: 'Shrikhand-Regular.ttf';
+    src: url('Shrikhand-Regular.ttf') ;
+}
+body{
+    font-family: 'Roboto-Regular.ttf';
+    margin:0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*Partie header*/
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.8em;
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    left: 25px;
+    bottom: 23px;
+    font-size: 1.4em;
+    color: black;
+}
+
+/*Fin*/
+/*partie baniere*/
+.Imagesrestaurants {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 500;
+}
+.banniere{
+
+    overflow: hidden;
+}
+/*fin*/
+/*Partie menue*/
+.titresecmenu{
+    font-family: 'Shrikhand-Regular.ttf';
+    font-size: 1.5em;
+    margin-left: 0.2em;
+}
+.titredessens{
+    font-size: 1.5em;
+}
+.coeurtitre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coeurvideicone{
+    font-size: 1.5em;
+    color: black;
+}
+.textcoeur{
+    margin-right: 2em;
+}
+.sectionmenu{
+    background-color:#f2f2f2;
+    padding: 0.4em 1em 6em 1em;
+    border-top-left-radius: 2.5em;
+    border-top-right-radius: 2.5em;
+    position: relative;
+    margin-top: -2.5em;
+    z-index: 1000;
+}
+.sectionmenulanote{
+    margin-top: -16.5em;
+
+}
+.menuchoix{
+    height: 4.5em;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2em 0 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    box-shadow: 0 0 0.5em #0000002e;
+}
+.menulist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1em;
+}
+.titremenu{
+    margin-bottom: 0.5em;
+}
+.compomenu{
+    font-size: 0.9em;
+    color: gray;
+}
+.menudebutfin{
+margin: 2.5em 0 0.8em 0.2em;
+color: gray;
+border-bottom: 2px solid #99E2D0;
+padding-bottom: 0.2em;
+width: 2.5em;
+}
+.menueentrees{
+    margin-top: 0.5em;
+}
+.boutoncommande{
+    border-radius: 2em;
+    width: 55%;
+    height: 3.5em;
+    background: -webkit-linear-gradient(top, #FF79DA,#9356DC);
+    background: -moz-linear-gradient(bottom, #FF79DA,#9356DC);
+    background: -o-linear-gradient(bottom, #FF79DA,#9356DC);
+    background: linear-gradient(to bottom,#FF79DA,#9356dc);
+    border: none;
+    box-shadow: 0 0 1em #0000002e;
+    margin-top: 2em;
+}
+.textcommande{
+    color: white;
+    font-size: 1.2em;
+}
+.centrebouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*fin*/
+/*partie footer*/
+footer{
+    background-color: rgb(66, 65, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+.logofooter{
+height: 2em;
+width: 7em;
+font-size: 1.2em;
+filter: invert(100%);
+}
+.textfooter{
+    color: white;
+    margin-top: 0.5em;
+}
+.linkfooter{
+    color: white;
+    text-decoration: none;
+}
+.iconuten{
+    margin-right: 1em;
+}
+.iconhelp{
+    margin-right: 1em;
+    font-size: 0.8em;
+}
+
+/*Fin*/

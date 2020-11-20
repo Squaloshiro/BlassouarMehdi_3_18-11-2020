@@ -1,7 +1,169 @@
+@font-face{
+    font-family: 'Roboto-Regular.ttf';
+    src: url('Roboto-Regular.ttf');
+}
+body{
+    font-family: 'Roboto-Regular.ttf';
+    margin:0;
+    padding: 0;
+}
+* {
+
+    box-sizing: border-box;
+}
+
+/*partie header*/
+header{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+}
+/*fin*/
+
+/*partie localisation*/
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f2f2f2 ;
+    border-top: 0.2em solid rgb(235, 235, 235);
+    height: 3em;
+    padding: 1.7em 0 1.7em 0;
+
+}
+input{
+    background-color: #f2f2f2;
+    border: none;
+    text-align: center;
+    width: 10em;
+    color: black;
+    font-weight: 1000;
+}
+
+/*fin*/
+
+/*partie introduction*/
+.introduction{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+    height: 19em;
+    padding-bottom:2em ;
+}
+button{
+    border-radius: 2em;
+    width: 65%;
+    height: 4em;
+    background: -webkit-linear-gradient(top, #FF79DA,#9356DC);
+    background: -moz-linear-gradient(bottom, #FF79DA,#9356DC);
+    background: -o-linear-gradient(bottom, #FF79DA,#9356DC);
+    background: linear-gradient(to bottom,#FF79DA,#9356dc);
+    border: none;
+    box-shadow: 0 0 1em #0000002e;
+    margin-top: 2em;
+}
+span{
+    color: white;
+    font-size: 1.2em;
+}
+.textdintro{
+    margin-top : -0.5em;
+    width: 80%;
+}
+/*fin*/
+
+/*Partie fonctionnement*/
+
+.sectionfonctionnement{
+    margin: 3em 0 4em 0;
+}
+
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.number{
+    height: 1.5em;
+    width: 1.5em;
+    min-width: 1.5em;
+    min-height: 1.5em;
+    border: 1px solid#9356dc;
+    border-radius: 50%;
+    background-color: #9356dc;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+.boutonfonctionnement{
+    width: 90%;
+    border: 2px solid rgb(247, 247, 247);
+    border-radius: 2em;
+    height: 5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    margin-top: 2em;
+    box-shadow: 0 0 1em #0000002e;
+    cursor: pointer;
+}
+.position{
+    position: relative;
+    right: 30px;
+    margin-left: 1em;
+}
+
+i.taillephoneicon{
+    font-size: 1.5em;
+    color: gray;
+}
+i.taillelisticon, .taillestoricon{
+    font-size: 1.2em;
+    color: gray;
+}
+.titrefonctionnement{
+    position: relative;
+    left: 15px;
+}
+.boutonfonctionnement:hover,
+.boutonfonctionnement i:hover{
+    transform: scale(1.02);
+    background-color: rgb(247, 121, 218, .1);
+    color: #9356dc;
+}
+.titrefonction{
+    color: black;
+}
+/*.boutonfonctionnement i:hover{
+    color: #9356dc;
+}*/
+/*Fin*/
+
+/*Partie resto*/
+
+.sectionresto{
+    background-color: rgb(247, 247, 247);
+    height: auto;
+    padding: 3em 1em 4em 1em ;
+}
+.textresto{
+    margin-top : -0.7em;
+    margin-left: 1em;
+}
+.titreresto{
+    margin-top : 0.5em;
+    margin-left: 1em;
+}
+
 .grillerestaurants{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 20em);
+    grid-template-rows: repeat(4, 15em);
     grid-gap: 30px;
 }
 .image1 {
@@ -30,12 +192,8 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    z-index: 500;
 }
-
-/*.activitetitre {
-    margin: 1.2em 1.5em;
-    cursor: pointer;
-}*/
 
 .SectionRestaurants{
     display: flex;
@@ -44,8 +202,77 @@
     box-shadow: 0 0 1em #0000002e;
     overflow: hidden;
     transition-duration: 0.1s;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
 }
 .Imageslink {
     position: relative;
     flex: 1;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.nouveauresto{
+    border: 1px solid #99E2D0;
+    background-color: #99E2D0;
+    height: 2em;
+    width: 5.5em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2em;
+}
+.coeurvideicon{
+    position: absolute;
+    right: 20px;
+    bottom:30px ;
+    font-size: 1.4em;
+}
+.textcoeur{
+    color: gray;
+}
+
+.titrenouveau{
+    color: #52b199;
+}
+/*Fin*/
+
+/*partie footer*/
+footer{
+    background-color: rgb(66, 65, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+.logofooter{
+height: 2em;
+width: 7em;
+font-size: 1.2em;
+filter: invert(100%);
+}
+.textfooter{
+    color: white;
+    margin-top: 0.5em;
+}
+.linkfooter{
+    color: white;
+}
+.iconuten{
+    margin-right: 1em;
+}
+.iconhelp{
+    margin-right: 1em;
+    font-size: 0.8em;
+}
+
+/*Fin*/
