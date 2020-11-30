@@ -1,11 +1,11 @@
 @font-face{
     font-family: 'Roboto-Regular.ttf';
-    src: url('Roboto-Regular.ttf');
+    src: url('Police/Roboto-Regular.ttf');
 
 }
 @font-face{
     font-family: 'Shrikhand-Regular.ttf';
-    src: url('Shrikhand-Regular.ttf') ;
+    src: url('Police/Shrikhand-Regular.ttf') ;
 }
 body{
     font-family: 'Roboto-Regular.ttf';
@@ -14,6 +14,11 @@ body{
 }
 *{
     box-sizing: border-box;
+}
+html{
+    --primary: #9356DC; 
+    --secondary: #FF79DA;
+    --tertiary:#99E2D0;
 }
 
 /*Partie header*/
@@ -110,7 +115,7 @@ header{
 .menudebutfin{
 margin: 2.5em 0 0.8em 0.2em;
 color: gray;
-border-bottom: 2px solid #99E2D0;
+border-bottom: 2px solid var(--tertiary);
 padding-bottom: 0.2em;
 width: 2.5em;
 }
@@ -121,10 +126,10 @@ width: 2.5em;
     border-radius: 2em;
     width: 55%;
     height: 3.5em;
-    background: -webkit-linear-gradient(top, #FF79DA,#9356DC);
-    background: -moz-linear-gradient(bottom, #FF79DA,#9356DC);
-    background: -o-linear-gradient(bottom, #FF79DA,#9356DC);
-    background: linear-gradient(to bottom,#FF79DA,#9356dc);
+    background: -webkit-linear-gradient(top,var(--secondary),var(--primary));
+    background: -moz-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: -o-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: linear-gradient(to bottom,var(--secondary),var(--primary));
     border: none;
     box-shadow: 0 0 1em #0000002e;
     margin-top: 2em;

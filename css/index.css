@@ -1,9 +1,9 @@
 @font-face{
-    font-family: 'Roboto-Regular.ttf';
-    src: url('Roboto-Regular.ttf');
+    font-family: 'Police/Roboto-Regular.ttf';
+    src: url('Police/Roboto-Regular.ttf');
 }
 body{
-    font-family: 'Roboto-Regular.ttf';
+    font-family: 'Police/Roboto-Regular.ttf';
     margin:0;
     padding: 0;
 }
@@ -12,6 +12,11 @@ body{
     box-sizing: border-box;
 }
 
+html{
+    --primary: #9356DC; 
+    --secondary: #FF79DA;
+    --tertiary:#99E2D0;
+}
 /*partie header*/
 header{
     display: flex;
@@ -53,14 +58,20 @@ input{
     height: 19em;
     padding-bottom:2em ;
 }
+h1{
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 1.5em;
+    font-weight: 1000;
+}
 button{
     border-radius: 2em;
     width: 65%;
     height: 4em;
-    background: -webkit-linear-gradient(top, #FF79DA,#9356DC);
-    background: -moz-linear-gradient(bottom, #FF79DA,#9356DC);
-    background: -o-linear-gradient(bottom, #FF79DA,#9356DC);
-    background: linear-gradient(to bottom,#FF79DA,#9356dc);
+    background: -webkit-linear-gradient(top,var(--secondary),var(--primary));
+    background: -moz-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: -o-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: linear-gradient(to bottom,var(--secondary),var(--primary));
     border: none;
     box-shadow: 0 0 1em #0000002e;
     margin-top: 2em;
@@ -91,9 +102,9 @@ span{
     width: 1.5em;
     min-width: 1.5em;
     min-height: 1.5em;
-    border: 1px solid#9356dc;
+    border: 1px solid var(--primary);
     border-radius: 50%;
-    background-color: #9356dc;
+    background-color: var(--primary);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -134,7 +145,7 @@ i.taillelisticon, .taillestoricon{
 .boutonfonctionnement i:hover{
     transform: scale(1.02);
     background-color: rgb(247, 121, 218, .1);
-    color: #9356dc;
+    color: var(--primary);
 }
 .titrefonction{
     color: black;
@@ -215,8 +226,8 @@ a{
     color: black;
 }
 .nouveauresto{
-    border: 1px solid #99E2D0;
-    background-color: #99E2D0;
+    border: 1px solid var(--tertiary);
+    background-color: var(--tertiary);
     height: 2em;
     width: 5.5em;
     position: absolute;
