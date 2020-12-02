@@ -126,9 +126,9 @@ width: 2.5em;
     border-radius: 2em;
     width: 55%;
     height: 3.5em;
-    background: -webkit-linear-gradient(top,var(--secondary),var(--primary));
-    background: -moz-linear-gradient(bottom,var(--secondary),var(--primary));
-    background: -o-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: linear-gradient(top,var(--secondary),var(--primary));
+    /*background: -moz-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: -o-linear-gradient(bottom,var(--secondary),var(--primary));*/
     background: linear-gradient(to bottom,var(--secondary),var(--primary));
     border: none;
     box-shadow: 0 0 1em #0000002e;

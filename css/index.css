@@ -42,7 +42,7 @@ input{
     text-align: center;
     width: 10em;
     color: black;
-    font-weight: 1000;
+    font-weight: 500;
 }
 
 /*fin*/
@@ -62,19 +62,22 @@ h1{
     margin-left: 4em;
     margin-right: 4em;
     font-size: 1.5em;
-    font-weight: 1000;
+    font-weight: 500;
 }
+
 button{
     border-radius: 2em;
     width: 65%;
     height: 4em;
-    background: -webkit-linear-gradient(top,var(--secondary),var(--primary));
+    background: linear-Gradient(var(--secondary),var(--primary));
+    background: linear-gradient(#e66465, #9198e5);
     background: -moz-linear-gradient(bottom,var(--secondary),var(--primary));
     background: -o-linear-gradient(bottom,var(--secondary),var(--primary));
-    background: linear-gradient(to bottom,var(--secondary),var(--primary));
+    background: linear-Gradient(to bottom,var(--secondary),var(--primary));
     border: none;
     box-shadow: 0 0 1em #0000002e;
     margin-top: 2em;
+    cursor: pointer;
 }
 span{
     color: white;
@@ -112,7 +115,7 @@ span{
 }
 .boutonfonctionnement{
     width: 90%;
-    border: 2px solid rgb(247, 247, 247);
+    /*border: 2px solid rgb(247, 247, 247);*/
     border-radius: 2em;
     height: 5em;
     display: flex;
