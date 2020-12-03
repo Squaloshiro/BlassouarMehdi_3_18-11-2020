@@ -79,6 +79,12 @@ button{
     margin-top: 2em;
     cursor: pointer;
 }
+
+button:hover{
+    filter: brightness(125%);
+    box-shadow: 0em 0em 2em #0000006e;
+
+}
 span{
     color: white;
     font-size: 1.2em;
@@ -87,6 +93,12 @@ span{
     margin-top : -0.5em;
     width: 80%;
 }
+@media screen and (min-width:768px){
+    button{
+        width: 30%;
+    }
+}
+
 /*fin*/
 
 /*Partie fonctionnement*/
@@ -156,6 +168,26 @@ i.taillelisticon, .taillestoricon{
 /*.boutonfonctionnement i:hover{
     color: #9356dc;
 }*/
+@media screen and (min-width:768px){
+    .fonctionnement{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .boutonfonctionnement{
+        width:30%;
+        /*border: 2px solid rgb(247, 247, 247);*/
+        border-radius: 2em;
+        height: 5em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(247, 247, 247);
+        margin-top: 2em;
+        box-shadow: 0 0 1em #0000002e;
+        cursor: pointer;
+    }
+}
 /*Fin*/
 
 /*Partie resto*/
@@ -243,18 +275,105 @@ a{
     justify-content: center;
     border-radius: 0.2em;
 }
-.coeurvideicon{
+
+.textcoeur{
     position: absolute;
     right: 20px;
     bottom:30px ;
     font-size: 1.4em;
+    color:grey;
+    z-index: 2;
+    overflow: hidden;
 }
-.textcoeur{
-    color: gray;
+.textcoeur:after{
+    content: '\f004';
+    position: absolute;
+    font-weight: 900;
+    bottom:0 ;
+    left: 0;
+    color: var(--primary);
+    background: linear-Gradient(var(--secondary),var(--primary));
+    background: linear-gradient(#e66465, #9198e5);
+    background: -moz-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: -o-linear-gradient(bottom,var(--secondary),var(--primary));
+    background: linear-Gradient(to bottom,var(--secondary),var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*transform: scaleY(0);
+    transform-origin: center;*/
+    transform: translate(0px, 100%);
+        opacity: 0;
+    width: 99%;
+    height: 99%;
+    transition:transform 1.5s;
+    z-index: -1;
+    overflow: hidden;
 }
+.textcoeur:hover::after{
+    /*transform: scaleY(1);*/
+    transform: translate(0px, 0%);
+        opacity: 2;
+}
+
+
+
 
 .titrenouveau{
     color: #52b199;
+}
+@media screen and (min-width:768px) and (max-width : 1024px){
+    .grillerestaurants{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 15em);
+        grid-gap: 30px;
+    }
+    .image1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .image2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .image3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .image4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+@media screen and (min-width : 1025px){
+    .grillerestaurants{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 15em;
+        grid-gap: 30px;
+    }
+    .image1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .image2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .image3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    .image4 {
+        grid-column: 4;
+        grid-row: 1;
+    }
 }
 /*Fin*/
 
