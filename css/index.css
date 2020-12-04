@@ -17,6 +17,60 @@ html{
     --secondary: #FF79DA;
     --tertiary:#99E2D0;
 }
+.loadcontent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+    animation-name: loader1;
+    opacity: 0;
+    animation: loader1 3s linear ;
+    animation-fill-mode: none;
+    }
+    .load{
+    width: 120px;
+    height: 120px;
+    border: 16px solid #e5e5e5;
+    border-top:16px solid #007bff ;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) ;
+    animation: loader 3s linear infinite;
+    
+    /*animation: loader1 6s linear infinite;*/
+    }
+    
+    
+    
+    @keyframes loader{
+        100%{
+            transform:translate(-50%, -50%) rotate(360deg) ;
+        }
+    
+    }
+    @keyframes loader1{
+        1%{
+        opacity: 1;
+        z-index: 999;
+        }
+        99%{
+            opacity: 1;
+            z-index: 999;
+        }
+        100%{
+            opacity: 0;
+            z-index: 999;
+        }
+        
+        
+    }
 /*partie header*/
 header{
     display: flex;
@@ -268,7 +322,7 @@ a{
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 1000;
+    z-index: 800;
     font-weight: 500;
     display: flex;
     align-items: center;

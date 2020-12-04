@@ -21,6 +21,8 @@ html{
     --tertiary:#99E2D0;
 }
 
+
+
 /*Partie header*/
 header{
     height: 60px;
@@ -154,6 +156,32 @@ header{
     margin-bottom: 1em;
     cursor: pointer;
     box-shadow: 0 0 0.5em #0000002e;
+    opacity: 1;
+
+}
+.apparition1{
+    animation: apparition 1s linear ;
+    animation-fill-mode: none
+}
+.apparition2{
+    animation: apparition 2s linear ;
+    animation-fill-mode: none
+}
+.apparition3{
+    animation: apparition 3s linear ;
+    animation-fill-mode: none
+}
+
+@keyframes apparition{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .menuchoix1{
     height: 4.5em;
