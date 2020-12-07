@@ -7,6 +7,7 @@ body {
     font-family: 'Police/Roboto-Regular.ttf';
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 * {
@@ -33,13 +34,13 @@ html {
     opacity: 0;
     animation: loader1 3s linear;
     animation-fill-mode: none;
+    padding-right: -10px;
 }
 
 .imgloader {
-    position: absolute;
-    top: 10%;
-    left: 42%;
-    width: 20em;
+display: flex;
+justify-content: center;
+padding-top:3em ;
 }
 
 .load {
@@ -73,7 +74,7 @@ html {
     justify-content: center;
 }
 
-.fa-utensils {
+.stylutensils {
     color: var(--primary);
     background: linear-Gradient(var(--secondary), var(--primary));
     background: linear-gradient(#e66465, #9198e5);
@@ -261,7 +262,7 @@ i.taillelisticon,
 
 .titrefonctionnement {
     position: relative;
-    left: 15px;
+    margin-left: 15px;
 }
 
 .boutonfonctionnement:hover,
