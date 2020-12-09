@@ -34,7 +34,6 @@ html {
     opacity: 0;
     animation: loader1 3s linear;
     animation-fill-mode: none;
-    padding-right: -10px;
 }
 
 .imgloader {
