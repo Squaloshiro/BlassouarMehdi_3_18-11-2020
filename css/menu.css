@@ -257,7 +257,11 @@ header {
 
 .titremenu {
     margin-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
 
 .compomenu {
     font-size: 0.9em;
