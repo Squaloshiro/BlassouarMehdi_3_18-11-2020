@@ -29,7 +29,6 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgb(235, 235, 235);
-    opacity: 1;
     animation-name: loader1;
     opacity: 0;
     animation: loader1 3s linear;
@@ -41,7 +40,7 @@ display: flex;
 justify-content: center;
 padding-top:3em ;
 }
-
+/*animation load spinner*/
 .load {
     display: flex;
     align-items: center;
@@ -112,6 +111,7 @@ padding-top:3em ;
 
 
 }
+/*Fin animation load spinner*/
 
 /*partie header*/
 header {
@@ -178,12 +178,13 @@ button {
     margin-top: 2em;
     cursor: pointer;
 }
-
+/*animation boutton*/
 button:hover {
     filter: brightness(125%);
     box-shadow: 0em 0em 2em #0000006e;
 
 }
+/*Fin animation boutton*/
 
 span {
     color: white;
@@ -390,7 +391,7 @@ a {
     border-radius: 0.2em;
 }
 
-
+/*Animation coeur*/
 .flex {
     position: absolute;
     right: 20px;
@@ -446,6 +447,7 @@ a {
 .titrenouveau {
     color: #52b199;
 }
+/*fin animation coeur*/
 
 @media screen and (min-width:768px) and (max-width : 1024px) {
     .grillerestaurants {

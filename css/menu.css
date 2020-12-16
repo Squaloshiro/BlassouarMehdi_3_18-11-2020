@@ -103,7 +103,7 @@ header {
     text-overflow: clip;
     margin-right: 2em;
 }
-
+/*animation coeur*/
 .jauge {
     width: 25px;
     height: 25px;
@@ -140,6 +140,7 @@ header {
 .jauge:active .jauge-remplissage {
     height: 100%;
 }
+/*fin animation coeur*/
 
 .sectionmenu {
     background-color: #f2f2f2;
@@ -156,12 +157,7 @@ header {
 
 }
 
-.animation {
-    width: 100%;
-    transition: 2s;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+
 
 .menuchoix {
     position: relative;
@@ -178,7 +174,7 @@ header {
     opacity: 1;
     overflow: hidden;
 }
-
+/*apparition plat*/
 .apparition1 {
     -webkit-animation: apparition 1s linear;
     animation: apparition 1s linear;
@@ -227,6 +223,7 @@ header {
         opacity: 1;
     }
 }
+/*Fin apparition plat*/
 
 .menuchoix1 {
     position: relative;
@@ -269,7 +266,13 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
+/*Animation check*/
+.animation {
+    width: 100%;
+    transition: 2s;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .animation::after {
     content: "\f058";
     font-family: 'Font Awesome\ 5 Free';
@@ -304,10 +307,19 @@ header {
 
 }
 
-/*.test:active */
 .animation:active {
     width: 80%;
 }
+.animation:active::after {
+    -webkit-animation: rotation 3s forwards;
+    animation: rotation 3s forwards;
+    left: 87%;
+}
+
+.animation:active::before {
+    width: 20%;
+}
+
 
 @-webkit-keyframes rotation {
     0% {
@@ -328,16 +340,7 @@ header {
         transform: rotate(360deg);
     }
 }
-
-.animation:active::after {
-    -webkit-animation: rotation 3s forwards;
-    animation: rotation 3s forwards;
-    left: 87%;
-}
-
-.animation:active::before {
-    width: 20%;
-}
+/*Fin annimation check*/
 
 .menudebutfin {
     margin: 2.5em 0 0.8em 0.2em;
