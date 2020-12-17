@@ -20,7 +20,7 @@ html {
     --secondary: #FF79DA;
     --tertiary: #99E2D0;
 }
-
+/*animation load spinner*/
 .loadcontent {
     position: fixed;
     top: 0;
@@ -40,7 +40,7 @@ display: flex;
 justify-content: center;
 padding-top:3em ;
 }
-/*animation load spinner*/
+
 .load {
     display: flex;
     align-items: center;
